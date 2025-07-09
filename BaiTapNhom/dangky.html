@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <title>DP Store</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header id="h">
+        <div>
+            <a href="trangchu.html"><img id="logo" alt="logo img" src="./images/logo.jpg" /></a>
+        </div>
+        <nav>
+            <a id="page" href="trangchu.html">Trang chủ</a>
+            <a id="page" href="gioithieu.html">Giới thiệu</a>
+            <a id="page" href="sanpham.html">Sản phẩm</a>
+            <a id="page" href="giohang.html">Giỏ hàng</a>
+            <a id="page" href="dangnhap.html">Đăng nhập</a>
+            <a id="page" href="dangky.html">Đăng ký</a>
+            <a id="page" href="lienhe.html">Liên hệ</a>
+        </nav>
+    </header>
+    <main id="trangdangky">
+        <div class="register">
+            <form onsubmit="return dkValidate(this);">
+                <div class="input-user">
+                    <label for="name"><i class="fa-regular fa-user"></i></label>
+                    <input id="name" type="name" placeholder="Họ và Tên">
+                </div>
+                <div class="input-user">
+                    <label for="email"> <i class="fa-regular fa-envelope"></i></label>
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-user">
+                    <label for="password1"> <i class="fa-solid fa-lock"></i></label>
+                    <input id="password1" type="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="input-user">
+                    <label for="password2"> <i class="fa-solid fa-lock"></i></label>
+                    <input id="password2" type="password" placeholder=" Nhập lại mật khẩu" required>
+                </div>
+                <input type="submit" value="Đăng ký">
+            </form>
+            <h2>TẠO TÀI KHOẢN</h2>
+           <div class="back-to-login">
+                <a href="dangnhap.html"><i class="fa-solid fa-arrow-left"></i> quay lại trang đăng nhập</a>
+            </div>
+    </main>
+    <footer>
+        <p>Bài tập nhóm 6.<a href="#h">Về đầu trang</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <title>DP Store</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header id="h">
+        <div>
+            <a href="trangchu.html"><img id="logo" alt="logo img" src="./images/logo.jpg"/></a>
+        </div>
+        <div>
+            <a id="page" href="trangchu.html">Trang chủ</a>
+            <a id="page" href="gioithieu.html">Giới thiệu</a>
+            <a id="page" href="sanpham.html">Sản phẩm</a>
+            <a id="page" href="giohang.html">Giỏ hàng</a>
+            <a id="page" href="dangnhap.html">Đăng nhập</a>
+            <a id="page" href="dangky.html">Đăng ký</a>
+            <a id="page" href="lienhe.html">Liên hệ</a>
+        </div>
+    </header>
+    <main id="trangsanpham">
+        <div id="phanloai">
+            <a href="#op1">
+                <p>Phụ kiện cho thuê</p>
+            </a>
+            <a href="#op2">
+                <p>Quà tặng</p>
+            </a>
+            <a href="#op3">
+                <p>Bánh kem theo mẫu</p>
+            </a>
+            <a href="#op4">
+                <p>Phụ kiện tổ chức</p>
+            </a>
+            <a href="#op5">
+                <p>Đèn trang trí</p>
+            </a>
+        </div>
+        <div id="sanpham">
+            <section id="op1">
+                <h2>Phụ kiện cho thuê</h2>
+                <div id="divop">
+                    <div>
+                        <img src="./images/sanpham/op1_boloamicro.jpg" />
+                        <b>Bộ loa và micro</b>
+                        <p>599,000đ</p>
+                        <span>
+                            <input id="sp001" type="number" min="1" max="10" value="1" /><button
+                                onclick="themSP('sp001')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op1_khungbackdrop.jpg" />
+                        <b>Khung backdrop</b>
+                        <p>229,000đ</p>
+                        <span>
+                            <input id="sp002" type="number" min="1" max="10" value="1" /><button
+                                onclick="themSP('sp002')">Chọn</button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="op2">
+                <h2>Quà tặng</h2>
+                <div id="divop">
+                    <div>
+                        <img src="./images/sanpham/op2_hopbongbong.jpg" />
+                        <b>Hộp bong bóng rút tiền</b>
+                        <p>399,000đ</p>
+                        <span>
+                            <input id="sp003" type="number" min="1" max="10" value="1" /><button
+                                onclick="themSP('sp003')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op2_bohoahong.jpg" />
+                        <b>Bó hoa sinh nhật</b>
+                        <p>499,000đ</p>
+                        <span>
+                            <input id="sp004" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp004')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op2_gaubong.jpg" />
+                        <b>Gấu bông</b>
+                        <p>299,000đ</p>
+                        <span>
+                            <input id="sp005" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp005')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op2_donghotrotuong.jpg" />
+                        <b>Đồng hồ treo tường</b>
+                        <p>119,000đ</p>
+                        <span>
+                            <input id="sp006" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp006')">Chọn</button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="op3">
+                <h2>Bánh kem theo mẫu</h2>
+                <div id="divop">
+                    <div>
+                        <img src="./images/sanpham/op3_banhkemtheomau1.jpg" />
+                        <b>Bánh kem theo mẫu</b>
+                        <p>269,000đ</p>
+                        <span>
+                            <input id="sp007" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp007')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op3_banhkemtheomau2.jpg" />
+                        <b>Bánh kem theo mẫu</b>
+                        <p>269,000đ</p>
+                        <span>
+                            <input id="sp008" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp008')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op3_banhkemtheomau3.jpg" />
+                        <b>Bánh kem theo mẫu</b>
+                        <p>269,000đ</p>
+                        <span>
+                            <input id="sp009" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp009')">Chọn</button>
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+            <section id="op4">
+                <h2>Phụ kiện tổ chức</h2>
+                <div id="divop">
+                    <div>
+                        <img src="./images/sanpham/op4_binhxittuyet.jpg" />
+                        <b>Bình xịt tuyết</b>
+                        <p>27,000đ</p>
+                        <span>
+                            <input id="sp010" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp010')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op4_bodia.jpg" />
+                        <b>Bộ dĩa nhựa</b>
+                        <p>29,000đ/10 cái</p>
+                        <span>
+                            <input id="sp011" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp011')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op4_boly.jpeg" />
+                        <b>Bộ ly nhựa</b>
+                        <p>26,000đ/10 cái</p>
+                        <span>
+                            <input id="sp012" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp012')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op4_nonsinhnhat.jpg" />
+                        <b>Nón sinh nhật</b>
+                        <p>210,000đ/10 cái</p>
+                        <span>
+                            <input id="sp013" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp013')">Chọn</button>
+                        </span>
+                    </div>
+
+                    <div>
+                        <img src="./images/sanpham/op4_bongbongchrome.jpg" />
+                        <b>Bong bóng mạ chrome</b>
+                        <p>24,000đ/1 cái</p>
+                        <span>
+                            <input id="sp014" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp014')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op4_daytreo.jpg" />
+                        <b>Dây treo trang trí</b>
+                        <p>89,000đ</p>
+                        <span>
+                            <input id="sp015" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp015')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op4_khantraiban.jpg" />
+                        <b>Khăn trải bàn</b>
+                        <p>49,000đ</p>
+                        <span>
+                            <input id="sp016" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp016')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op4_remtrangtri.jpg" />
+                        <b>Rèm 3m (nhiều màu)</b>
+                        <p>38,000đ</p>
+                        <span>
+                            <input id="sp017" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp017')">Chọn</button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="op5">
+                <h2>Đèn trang trí</h2>
+                <div id="divop">
+                    <div>
+                        <img src="./images/sanpham/op5_denledtrangtri.jpg"/>
+                        <b>Đèn trang trí (1 - 5 m)</b>
+                        <p>99,000đ/30 sợi</p>
+                        <span>
+                            <input id="sp018" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp018')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op5_denledngoisao.jpg"/>
+                        <b>Đèn ngôi sao (2 - 5 m)</b>
+                        <p>126,000đ/30 sợi</p>
+                        <span>
+                            <input id="sp019" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp019')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op5_denledbongden.jpg"/>
+                        <b>Đèn hình tròn (2 - 5 m)</b>
+                        <p>126,000đ/30 sợi</p>
+                        <span>
+                            <input id="sp020" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp020')">Chọn</button>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/sanpham/op5_denledsochucai.jpg"/>
+                        <b>Đèn chữ cái & số</b>
+                        <p>40,000đ/cái</p>
+                        <span>
+                            <input id="sp021" type="number" min="1" max="10" value="1" />
+                            <button onclick="themSP('sp021')">Chọn</button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Bài tập nhóm 6.<a href="#h">Về đầu trang</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

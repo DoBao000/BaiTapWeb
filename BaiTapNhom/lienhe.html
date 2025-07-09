@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <title>DP Store</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header id="h">
+        <div>
+            <a href="trangchu.html"><img id="logo" alt="logo img" src="./images/logo.jpg"/></a>
+        </div>
+        <div>
+            <a id="page" href="trangchu.html">Trang chủ</a>
+            <a id="page" href="gioithieu.html">Giới thiệu</a>
+            <a id="page" href="sanpham.html">Sản phẩm</a>
+            <a id="page" href="giohang.html">Giỏ hàng</a>
+            <a id="page" href="dangnhap.html">Đăng nhập</a>
+            <a id="page" href="dangky.html">Đăng ký</a>
+            <a id="page" href="lienhe.html">Liên hệ</a>
+        </div>
+    </header>
+    <main id="tranglienhe">
+        <div class="khung-lien-he">
+            <form onsubmit="Formlh();">
+                <fieldset>
+                    <legend>Liên hệ và Góp ý ngay với chúng tôi</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">Họ Tên:</label></td>
+                            <td style="width: 55%;"><input id="name" type="text" name="name" placeholder="Vui lòng nhập Họ tên của bạn" required style="width: 55%;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td style="width: 80%;"><input id="email" type="text" name="email" placeholder="Vui lòng nhập địa chỉ Email" required style="width: 55%;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="topic">Chủ đề:</label></td>
+                            <td>
+                                <select size="1">
+                                    <option>Về Sản Phẩm/ Dịch Vụ</option>
+                                    <option>Về Thiết Kế - In Ấn Theo Yêu Cầu</option>
+                                    <option>Về Trang Trí Thôi Nôi - Sinh Nhật Bé </option>
+                                    <option>Về Trang Trí Sinh Nhật Người Lớn</option>
+                                    <option>Về Qùa Tặng</option>
+                                    <option>Về Ưu Đãi Thành Viên</option>
+                                    <option>Về Tin Tuyển Dụng</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Lời nhắn:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea rows="10" cols="70" name="details" placeholder="Nội dung cần liên hệ và góp ý"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input type="submit" value="Gửi đi" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <div class="thong-tin">
+                <h3>Thông tin liên hệ</h3>
+                <p><i class="fa fa-map-marker-alt" style="color: rgb(0, 0, 0); margin-right: 10px;"></i> Khu II, Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ</p>  
+                <p><i class="fa fa-phone" style="color: rgb(0, 0, 0); margin-right: 10px;"></i> +84 3831 530</p>
+                <p><i class="fa fa-envelope" style="color: rgb(0, 0, 0); margin-right: 10px;"></i> abcxyz123@gmail.com</p>
+                <p><i class="fa-brands fa-facebook" style="color: rgb(0, 0, 0); margin-right: 10px;"></i> fb.com/abcxyz123</p>
+                <div class="hinh-anh">
+                    <img src="./images/lienhe/ins.png" width="50" height="50">
+                    <img src="./images/lienhe/tiktok.png" width="50" height="50">
+                    <img src="./images/lienhe/yt02.png" width="50" height="50">
+                    <img src="./images/lienhe/zalo.png" width="50" height="50">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Bài tập nhóm 6.<a href="#h">Về đầu trang</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

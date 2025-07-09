@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <title>DP Store</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header id="h">
+        <div>
+            <a href="trangchu.html"><img id="logo" alt="logo img" src="./images/logo.jpg" /></a>
+        </div>
+        <nav>
+            <a id="page" href="trangchu.html">Trang chủ</a>
+            <a id="page" href="gioithieu.html">Giới thiệu</a>
+            <a id="page" href="sanpham.html">Sản phẩm</a>
+            <a id="page" href="giohang.html">Giỏ hàng</a>
+            <a id="page" href="dangnhap.html">Đăng nhập</a>
+            <a id="page" href="dangky.html">Đăng ký</a>
+            <a id="page" href="lienhe.html">Liên hệ</a>
+        </nav>
+    </header>
+    <main id="trangdangnhap">
+        <div class="login-box">
+            <h2>ĐĂNG NHẬP</h2>
+            <form onsubmit="return dnValidate(this);">
+                <div class="input-user">
+                    <label for="email"> <i class="fa-regular fa-envelope"></i></label>
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-user">
+                    <label for="password"> <i class="fa-solid fa-lock"></i></label>
+                    <input id="password" type="password" placeholder="Mật khẩu" required>
+                </div>
+                <p><a href="#">Quên mật khẩu?</a> hoặc <a href="dangky.html">Đăng ký</a></p>
+                <input type="submit" value="Đăng nhập">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Bài tập nhóm 6.<a href="#h">Về đầu trang</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

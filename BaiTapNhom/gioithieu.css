@@ -1,0 +1,107 @@
+.hinhanh{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sanpham {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(249, 253, 249, 1);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sanpham img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+#tranggioithieu p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(46, 125, 50, 1);
+    background-color: rgba(243, 253, 243, 1);
+    padding: 10px 15px;
+    border-left: 4px solid rgba(129, 199, 132, 1);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#tranggioithieu ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(46, 125, 50, 1);
+    background-color: rgba(241, 253, 241, 1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    list-style: none;
+    position: relative;
+}
+
+
+.decor1 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.decor1 li a {
+    text-decoration: none;
+    color: rgba(46, 125, 50, 1);
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.decor1 li a:hover {
+    background-color: rgba(129, 199, 132, 1);
+    color: white;
+}
+
+#tranggioithieu {
+    padding-top: 160px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#tranggioithieu section > div {
+    background: rgba(255, 255, 255, 1);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#tranggioithieu h1 {
+    color: rgba(56, 142, 60, 1);
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #h {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .decor1 {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
