@@ -38,6 +38,10 @@ footer a{
 footer a:hover {
   text-decoration: underline;
 }
+.anhsp{
+  width: 150px;
+  height: 100px;
+}
 
 /* Trang chủ */
 #cuahang{

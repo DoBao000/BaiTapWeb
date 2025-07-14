@@ -51,13 +51,12 @@ const danhSachSanPham = {
     sp013: { ten: "Nón sinh nhật", gia: 210000, hinh: "./images/sanpham/op4_nonsinhnhat.jpg" },
     sp014: { ten: "Bong bóng mạ chrome", gia: 24000, hinh: "./images/sanpham/op4_bongbongchrome.jpg" },
     sp015: { ten: "Dây treo trang trí", gia: 89000, hinh: "./images/sanpham/op4_daytreo.jpg" },
-
-
-
-
-
-
-
+    sp016: { ten: "Khăn trải bàn", gia: 49000, hinh: "./images/sanpham/op4_khantraiban.jpg" },
+    sp017: { ten: "Rèm 3m (nhiều màu)", gia: 38000, hinh: "./images/sanpham/op4_remtrangtri.jpg" },
+    sp018: { ten: "Đèn trang trí (1 - 5 m)", gia: 99000, hinh: "./images/sanpham/op5_denledtrangtri.jpg" },
+    sp019: { ten: "Đèn ngôi sao (2 - 5 m)", gia: 126000, hinh: "./images/sanpham/op5_denledngoisao.jpg" },
+    sp020: { ten: "Đèn hình tròn (2 - 5 m)", gia: 126000, hinh: "./images/sanpham/op5_denledbongden.jpg" },
+    sp021: { ten: "Đèn chữ cái & số", gia: 40000, hinh: "./images/sanpham/op5_denledsochucai.jpg" },
 };
 
 // định dạng tiền tệ
@@ -92,16 +91,15 @@ $(document).ready(function () {
                     let thanhTien = sp.gia * sl;
                     tong += thanhTien;
                     html += `
-    <div class="item" data-id="${ma}">
-        <img src="${sp.hinh}" alt="${sp.ten}" class="anhsp" />
-        <div class="ttsp">
-            <p><b>${sp.ten}</b></p>
-            <input class="soluong" type="number" value="${sl}" min="1" max="10"/>
-            <p>${dinhDangTien(thanhTien)} <i class="fa-solid fa-trash xoa"></i></p>
-        </div>
-    </div>
-`;
-
+                        <div class="item" data-id="${ma}">
+                            <img src="${sp.hinh}" alt="${sp.ten}" class="anhsp" />
+                            <div class="ttsp">
+                                <p><b>${sp.ten}</b></p>
+                                <input class="soluong" type="number" value="${sl}" min="1" max="10"/>
+                                <p>${dinhDangTien(thanhTien)} <i class="fa-solid fa-trash xoa"></i></p>
+                            </div>
+                        </div>
+                    `;
                 }
             });
 
@@ -149,7 +147,7 @@ $(document).ready(function () {
     }
 });
 
-//liên hệ
+// liên hệ
 function Formlh() {
     var ten = document.getElementById("name").value;
     var email = document.getElementById("email").value;
